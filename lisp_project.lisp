@@ -95,7 +95,9 @@
 
 (defun .pow (x y)
     (if (= y 0) 1
-        (* x (.pow x (- y 1)))))
+        (* x (.pow x (- y 1)))
+    )
+)
 
 (defun .with-annual-interest (P R N)
     (cond
